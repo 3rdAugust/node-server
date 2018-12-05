@@ -13,6 +13,13 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/lib', (req, res) => {
+    res.send({
+        title: "Library"
+    
+    });
+});
+
 app.get('/', (req, res) => {
     res.send({
         name: "Duy",
